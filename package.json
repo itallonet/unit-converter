@@ -15,5 +15,8 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/itallonet/unit-converter/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
