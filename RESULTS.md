@@ -18,3 +18,24 @@ Length(1000, { from: "m", to: "mm" }) execution time: 0.011ms
 Length(1000, { from: "m", to: "cm" }) execution time: 0.015ms
 
 ```
+
+# Area Test
+
+```js
+
+Area(1000, { from: "mm2", to: "m2" }) execution time: 0.066ms
+Area(1000, { from: "cm2", to: "m2" }) execution time: 0.021ms
+Area(1000, { from: "m2", to: "m2" }) execution time: 0.031ms
+Area(1000, { from: "mm2", to: "cm2" }) execution time: 0.012ms
+Area(1000, { from: "cm2", to: "mm2" }) execution time: 0.014ms
+Area(1000, { from: "cm2", to: "in2" }) execution time: 0.011ms
+Area(1000, { from: "in2", to: "cm2" }) execution time: 0.01ms
+Area(1000, { from: "cm2", to: "ft2" }) execution time: 0.011ms
+Area(1000, { from: "ft2", to: "cm2" }) execution time: 0.015ms
+Area(1000, { from: "cm2", to: "ac" }) execution time: 0.012ms
+Area(1000, { from: "ac", to: "cm2" }) execution time: 0.012ms
+Area(1000, { from: "cm2", to: "mi2" }) execution time: 0.01ms
+Area(1000, { from: "m2", to: "mm2" }) execution time: 0.007ms
+Area(1000, { from: "m2", to: "cm2" }) execution time: 0.006ms
+
+```
