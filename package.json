@@ -1,6 +1,6 @@
 {
   "name": "@itallonet/unit-converter",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Simple and easy to use unit converter for javascript in general",
   "main": "module.js",
   "scripts": {
