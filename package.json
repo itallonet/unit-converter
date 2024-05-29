@@ -1,0 +1,19 @@
+{
+  "name": "@itallonet/unit-converter",
+  "version": "1.0.0",
+  "description": "Simple and easy to use unit converter for javascript in general",
+  "main": "module.js",
+  "scripts": {
+    "test": "node __test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itallonet/unit-converter.git"
+  },
+  "keywords": ["unit converter", "javascript", "typescript"],
+  "author": "Itallo Rian (@itallonet)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/itallonet/unit-converter/issues"
+  }
+}
