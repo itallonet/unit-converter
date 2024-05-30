@@ -23,8 +23,19 @@ console.log(meterToCentimeterResult)
 
 import { Area } from "@itallonet/unit-converter";
 
-const squareMetersToSquareCentimeters = Area(1000, { from: "m2", to: "cm2" });
-console.log(squareMetersToSquareCentimeters)
+const squareMetersToSquareCentimetersResult = Area(1000, { from: "m2", to: "cm2" });
+console.log(squareMetersToSquareCentimetersResult)
+
+```
+
+- Mass (mcg, mg, g, kg, oz, lb, mt, t)
+
+``` js
+
+import { Mass } from "@itallonet/unit-converter";
+
+const gramToKiloResult = Mass(1000, { from: "g", to: "kg" });
+console.log(gramToKiloResult)
 
 ```
 
@@ -34,7 +45,6 @@ console.log(squareMetersToSquareCentimeters)
 
 ## Roadmap
 
-- Mass
 - Volume
 - Temperature
 - Time

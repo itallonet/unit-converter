@@ -39,3 +39,22 @@ Area(1000, { from: "m2", to: "mm2" }) execution time: 0.007ms
 Area(1000, { from: "m2", to: "cm2" }) execution time: 0.006ms
 
 ```
+
+# Mass Test
+
+```js
+
+Mass(1000, { from: "mcg", to: "mg" }) execution time: 0.075ms
+Mass(1000, { from: "mg", to: "g" }) execution time: 0.029ms
+Mass(1000, { from: "g", to: "kg" }) execution time: 0.019ms
+Mass(1000, { from: "mcg", to: "kg" }) execution time: 0.012ms
+Mass(1000, { from: "mg", to: "kg" }) execution time: 0.011ms
+Mass(1000, { from: "oz", to: "lb" }) execution time: 0.011ms
+Mass(1000, { from: "lb", to: "oz" }) execution time: 0.01ms
+Mass(1000, { from: "oz", to: "mt" }) execution time: 0.014ms
+Mass(1000, { from: "mt", to: "oz" }) execution time: 0.03ms
+Mass(1000, { from: "t", to: "oz" }) execution time: 0.013ms
+Mass(1000, { from: "oz", to: "g" }) execution time: 0.006ms
+Mass(1000, { from: "g", to: "oz" }) execution time: 0.006ms
+
+```
