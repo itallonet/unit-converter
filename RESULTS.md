@@ -85,3 +85,15 @@ Temperature(1000, { from: "K", to: "F" }) execution time: 0.077ms
 Temperature(1000, { from: "K", to: "C" }) execution time: 0.015ms
 
 ```
+
+# Time Test
+
+```js
+
+Time(1000, { from: "ms", to: "s" }) execution time: 0.072ms
+Time(1000, { from: "ms", to: "min" }) execution time: 0.016ms
+Time(1000, { from: "ms", to: "h" }) execution time: 0.014ms
+Time(1000, { from: "ms", to: "d" }) execution time: 0.031ms
+Time(1000, { from: "ms", to: "year" }) execution time: 0.017ms
+
+```

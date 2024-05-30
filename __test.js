@@ -1,4 +1,4 @@
-const { Length, Area, Mass, Volume, Temperature } = require("./module")
+const { Length, Area, Mass, Volume, Temperature, Time } = require("./module")
 
 const __test = () => {
     console.info("Init tests!")
@@ -121,8 +121,26 @@ const __test = () => {
         console.log(`Temperature(1000, { from: "${test.from}", to: "${test.to}" }) = ${result}`);
     });
 
+    console.info("Time")
+
+    tests = [
+        { from: "ms", to: "s" },
+        { from: "ms", to: "min" },
+        { from: "ms", to: "h" },
+        { from: "ms", to: "d" },
+        { from: "ms", to: "year" },
+    ]
+
+    tests.forEach((test) => {
+        const label = `Time(1000, { from: "${test.from}", to: "${test.to}" }) execution time`;
+        console.time(label);
+        const result = Time(1000, test);
+        console.timeEnd(label);
+        console.log(`Time(1000, { from: "${test.from}", to: "${test.to}" }) = ${result}`);
+    });
+
     //todo
-    // test temperature
+    // test time
 }
 
 __test();

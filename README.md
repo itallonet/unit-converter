@@ -62,13 +62,23 @@ console.log(celsiusToFahrenheitResult)
 
 ```
 
+- Time (ns, mu, ms, s, min, h, d, week, month, year)
+
+``` js
+
+import { Time } from "@itallonet/unit-converter";
+
+const minuteToYearResult = Time(1000, { from: "min", to: "year" });
+console.log(minuteToYearResult)
+
+```
+
 ## Author
 
 - [@itallonet](https://www.github.com/itallonet)
 
 ## Roadmap
 
-- Time
 - Frequency
 - Speed
 - Pressure
