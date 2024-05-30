@@ -71,6 +71,19 @@ import { Time } from "@itallonet/unit-converter";
 const minuteToYearResult = Time(1000, { from: "min", to: "year" });
 console.log(minuteToYearResult)
 
+
+```
+
+- Frequency (Hz, mHz, kHz, MHz, GHz, THz, rpm, deg/s, rad/s)
+
+``` js
+
+import { Frequency } from "@itallonet/unit-converter";
+
+const hertzToMegahertzResult = Frequency(1000, { from: "Hz", to: "MHz" });
+console.log(hertzToMegahertzResult)
+
+
 ```
 
 ## Author
@@ -79,7 +92,6 @@ console.log(minuteToYearResult)
 
 ## Roadmap
 
-- Frequency
 - Speed
 - Pressure
 - Digital

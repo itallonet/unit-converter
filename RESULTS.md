@@ -97,3 +97,17 @@ Time(1000, { from: "ms", to: "d" }) execution time: 0.031ms
 Time(1000, { from: "ms", to: "year" }) execution time: 0.017ms
 
 ```
+
+# Frequency Test
+
+```js
+
+Frequency(1000, { from: "Hz", to: "kHz" }) execution time: 0.106ms
+Frequency(1000, { from: "Hz", to: "MHz" }) execution time: 0.018ms
+Frequency(1000, { from: "Hz", to: "GHz" }) execution time: 0.017ms
+Frequency(1000, { from: "Hz", to: "THz" }) execution time: 0.017ms
+Frequency(1000, { from: "Hz", to: "rpm" }) execution time: 0.018ms
+Frequency(1000, { from: "Hz", to: "deg/s" }) execution time: 0.015ms
+Frequency(1000, { from: "Hz", to: "rad/s" }) execution time: 0.018ms
+
+```

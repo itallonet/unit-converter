@@ -1,4 +1,4 @@
-const { Length, Area, Mass, Volume, Temperature, Time } = require("./module")
+const { Length, Area, Mass, Volume, Temperature, Time, Frequency } = require("./module")
 
 const __test = () => {
     console.info("Init tests!")
@@ -139,8 +139,25 @@ const __test = () => {
         console.log(`Time(1000, { from: "${test.from}", to: "${test.to}" }) = ${result}`);
     });
 
-    //todo
-    // test time
+    console.info("Frequency")
+
+    tests = [
+        { from: "Hz", to: "kHz" },
+        { from: "Hz", to: "MHz" },
+        { from: "Hz", to: "GHz" },
+        { from: "Hz", to: "THz" },
+        { from: "Hz", to: "rpm" },
+        { from: "Hz", to: "deg/s" },
+        { from: "Hz", to: "rad/s" },
+    ]
+
+    tests.forEach((test) => {
+        const label = `Frequency(1000, { from: "${test.from}", to: "${test.to}" }) execution time`;
+        console.time(label);
+        const result = Frequency(1000, test);
+        console.timeEnd(label);
+        console.log(`Frequency(1000, { from: "${test.from}", to: "${test.to}" }) = ${result}`);
+    });
 }
 
 __test();
