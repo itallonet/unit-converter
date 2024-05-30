@@ -98,11 +98,18 @@ console.log(meterPerSecondToKilometerPerHour)
 
 ```
 
+- Digital (b, Kb, Mb, Gb, Tb, B, KB, MB, GB, TB)
+
+``` js
+
+import { Digital } from "@itallonet/unit-converter";
+
+const bitToTerabyteResult = Digital(1000, { from: "b", to: "TB" });
+console.log(bitToTerabyteResult)
+
+
+```
+
 ## Author
 
 - [@itallonet](https://www.github.com/itallonet)
-
-## Roadmap
-
-- Pressure
-- Digital

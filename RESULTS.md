@@ -122,3 +122,14 @@ Speed(1000, { from: "km/h", to: "knot" }) execution time: 0.009ms
 Speed(1000, { from: "knot", to: "km/h" }) execution time: 0.009ms
 
 ```
+
+# Digital Test
+
+```js
+
+Digital(1000, { from: "b", to: "B" }) execution time: 0.095ms
+Digital(1000, { from: "B", to: "Kb" }) execution time: 0.015ms
+Digital(1000, { from: "Mb", to: "Gb" }) execution time: 0.018ms
+Digital(1000, { from: "b", to: "TB" }) execution time: 0.083ms
+
+```

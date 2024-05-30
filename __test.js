@@ -1,4 +1,4 @@
-const { Length, Area, Mass, Volume, Temperature, Time, Frequency, Speed } = require("./module")
+const { Length, Area, Mass, Volume, Temperature, Time, Frequency, Speed, Digital } = require("./module")
 
 const __test = () => {
     console.info("Init tests!")
@@ -175,6 +175,24 @@ const __test = () => {
         console.timeEnd(label);
         console.log(`Speed(1000, { from: "${test.from}", to: "${test.to}" }) = ${result}`);
     });
+
+    console.info("Digital")
+
+    tests = [
+        { from: "b", to: "B" },
+        { from: "B", to: "Kb" },
+        { from: "Mb", to: "Gb" },
+        { from: "b", to: "TB" },
+    ]
+
+    tests.forEach((test) => {
+        const label = `Digital(1000, { from: "${test.from}", to: "${test.to}" }) execution time`;
+        console.time(label);
+        const result = Digital(1000, test);
+        console.timeEnd(label);
+        console.log(`Digital(1000, { from: "${test.from}", to: "${test.to}" }) = ${result}`);
+    });
+
 }
 
 __test();
