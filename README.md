@@ -51,13 +51,23 @@ console.log(milliliterToLiterResult)
 
 ```
 
+- Temperature (C, F, K, R)
+
+``` js
+
+import { Temperature } from "@itallonet/unit-converter";
+
+const celsiusToFahrenheitResult = Temperature(1000, { from: "C", to: "F" });
+console.log(celsiusToFahrenheitResult)
+
+```
+
 ## Author
 
 - [@itallonet](https://www.github.com/itallonet)
 
 ## Roadmap
 
-- Temperature
 - Time
 - Frequency
 - Speed
