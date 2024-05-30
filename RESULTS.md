@@ -72,3 +72,16 @@ Volume(1000, { from: "ml", to: "gal" }) execution time: 0.015ms
 Volume(1000, { from: "ml", to: "fl-oz" }) execution time: 0.014ms
 
 ```
+
+# Temperature Test
+
+```js
+
+Temperature(1000, { from: "C", to: "K" }) execution time: 0.133ms
+Temperature(1000, { from: "C", to: "F" }) execution time: 0.06ms
+Temperature(1000, { from: "F", to: "C" }) execution time: 0.09ms
+Temperature(1000, { from: "F", to: "K" }) execution time: 0.018ms
+Temperature(1000, { from: "K", to: "F" }) execution time: 0.077ms
+Temperature(1000, { from: "K", to: "C" }) execution time: 0.015ms
+
+```
