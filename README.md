@@ -39,13 +39,24 @@ console.log(gramToKiloResult)
 
 ```
 
+
+- Volume (mm3, cm3, ml, l, kl, m3, km3, tsp, Tbs, in3, fl-oz, cup, pnt, qt, gal, ft3, yd3)
+
+``` js
+
+import { Volume } from "@itallonet/unit-converter";
+
+const milliliterToLiterResult = Mass(1000, { from: "ml", to: "l" });
+console.log(milliliterToLiterResult)
+
+```
+
 ## Author
 
 - [@itallonet](https://www.github.com/itallonet)
 
 ## Roadmap
 
-- Volume
 - Temperature
 - Time
 - Frequency

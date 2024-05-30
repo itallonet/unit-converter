@@ -1,4 +1,4 @@
-const { Length, Area, Mass } = require("./module")
+const { Length, Area, Mass, Volume } = require("./module")
 
 const __test = () => {
     console.info("Init tests!")
@@ -56,7 +56,6 @@ const __test = () => {
         console.log(`Area(1000, { from: "${test.from}", to: "${test.to}" }) = ${result}`);
     });
 
-    // todo
     console.info("Mass")
 
     tests = [
@@ -81,6 +80,26 @@ const __test = () => {
         const result = Mass(1000, test);
         console.timeEnd(label);
         console.log(`Mass(1000, { from: "${test.from}", to: "${test.to}" }) = ${result}`);
+    });
+
+    console.info("Volume")
+
+    tests = [
+        { from: "ml", to: "l" },
+        { from: "ml", to: "cm3" },
+        { from: "ml", to: "m3" },
+        { from: "ml", to: "ft3" },
+        { from: "ml", to: "in3" },
+        { from: "ml", to: "gal" },
+        { from: "ml", to: "fl-oz" },
+    ]
+
+    tests.forEach((test) => {
+        const label = `Volume(1000, { from: "${test.from}", to: "${test.to}" }) execution time`;
+        console.time(label);
+        const result = Volume(1000, test);
+        console.timeEnd(label);
+        console.log(`Volume(1000, { from: "${test.from}", to: "${test.to}" }) = ${result}`);
     });
 }
 

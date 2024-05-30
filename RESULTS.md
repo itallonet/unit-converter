@@ -58,3 +58,17 @@ Mass(1000, { from: "oz", to: "g" }) execution time: 0.006ms
 Mass(1000, { from: "g", to: "oz" }) execution time: 0.006ms
 
 ```
+
+# Volume Test
+
+```js
+
+Volume(1000, { from: "ml", to: "l" }) execution time: 0.066ms
+Volume(1000, { from: "ml", to: "cm3" }) execution time: 0.013ms
+Volume(1000, { from: "ml", to: "m3" }) execution time: 0.013ms
+Volume(1000, { from: "ml", to: "ft3" }) execution time: 0.017ms
+Volume(1000, { from: "ml", to: "in3" }) execution time: 0.013ms
+Volume(1000, { from: "ml", to: "gal" }) execution time: 0.015ms
+Volume(1000, { from: "ml", to: "fl-oz" }) execution time: 0.014ms
+
+```
