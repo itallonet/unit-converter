@@ -86,12 +86,23 @@ console.log(hertzToMegahertzResult)
 
 ```
 
+- Speed (m/s, km/h, m/h, knot, ft/s)
+
+``` js
+
+import { Speed } from "@itallonet/unit-converter";
+
+const meterPerSecondToKilometerPerHour = Speed(1000, { from: "m/s", to: "km/h" });
+console.log(meterPerSecondToKilometerPerHour)
+
+
+```
+
 ## Author
 
 - [@itallonet](https://www.github.com/itallonet)
 
 ## Roadmap
 
-- Speed
 - Pressure
 - Digital

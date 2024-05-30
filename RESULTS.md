@@ -111,3 +111,14 @@ Frequency(1000, { from: "Hz", to: "deg/s" }) execution time: 0.015ms
 Frequency(1000, { from: "Hz", to: "rad/s" }) execution time: 0.018ms
 
 ```
+
+# Speed Test
+
+```js
+
+Speed(1000, { from: "m/s", to: "km/h" }) execution time: 0.087ms
+Speed(1000, { from: "m/s", to: "knot" }) execution time: 0.009ms
+Speed(1000, { from: "km/h", to: "knot" }) execution time: 0.009ms
+Speed(1000, { from: "knot", to: "km/h" }) execution time: 0.009ms
+
+```

@@ -5,5 +5,6 @@ module.exports = {
     Volume: require("./source/volume"),
     Temperature: require("./source/temperature"),
     Time: require("./source/time"),
-    Frequency: require("./source/frequency")
+    Frequency: require("./source/frequency"),
+    Speed:  require("./source/speed")
 }
